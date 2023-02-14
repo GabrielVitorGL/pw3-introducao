@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pw3-introducao';
+
+  obterAutor(){
+      return "É O IGOR GUIMARÃAESS";
+  }
+  nome = 'Gabriel'
+  sobrenome = 'Jefferson'
+  idade = 191
+
+
+  nomeCompleto(){
+    return this.nome + ' '+  this.sobrenome
+  }
 }
