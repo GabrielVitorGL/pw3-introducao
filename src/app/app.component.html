@@ -1,27 +1,37 @@
-<h2>
-    o titulo da pagina é : <q>{{title}}</q> e vc prefere a pepém ou a neném?
-   <br>
-   ou o caneta azul ??? olha se vc n me ama
+<div class="tudo">
+  <div class="background"></div>
+  <div class="dvd"></div>
+  <div class="conteudo">
+    <h2>
+      o titulo da pagina é : <q>{{ title }}</q> e vc prefere a pepém ou a neném?
+      <br />
+      ou o caneta azul ??? olha se vc n me ama
+    </h2>
+    <h1>
+      A soma de 1 e 2 é: {{ 1 + 2 }}
+      <br />
+      Autor: {{ obterAutor() }}
+    </h1>
+    <h1>
+      Primerio Nome: {{ nome }}
+      <br />
+      Sobrenome : {{ sobrenome }}
+      <br />
+      Idade : {{ idade }}
+    </h1>
+    <h1>Nome Completo : {{ nomeCompleto() }}</h1>
+    <h1>
+      <u>Olá, {{ nomeCompleto() }}! Você tem {{ idade }} anos.</u>
+    </h1>
+    <img src="{{ logo }}" class="logo" />
+    <img src="{{ logito }}" class="manuel" />
 
-</h2>
-<h1>
-  A soma de 1 e 2 é: {{1 + 2}}
-  <br>
-  Autor: {{obterAutor()}}
-</h1>
-<h1>
-  Primerio Nome: {{nome}}
-  <br>
-  Sobrenome : {{sobrenome}}
-  <br>
-  Idade : {{idade}}
-</h1>
-<h1>
-  Nome Completo : {{nomeCompleto()}}
-</h1>
-<h1>
-  <u>Olá, {{nomeCompleto()}}! Você tem {{idade}} anos.</u>
-</h1>
+    <button (click)="obterAlerta()">Exibir msg</button>
 
+    <div class="texto">
+      <h2 [hidden]="ocultar">Hoje é terça-feira</h2>
 
-
+      <button (click)="obterTexto()">Mostrar texto</button>
+    </div>
+  </div>
+</div>

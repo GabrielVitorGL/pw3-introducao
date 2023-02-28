@@ -19,4 +19,17 @@ export class AppComponent {
   nomeCompleto(){
     return this.nome + ' '+  this.sobrenome
   }
+  logo = "favicon.ico"
+  logito = "assets/manuelmito.jpg"
+
+
+  ocultar=true;
+
+  obterAlerta(){
+      alert("VC PREFERE A PEPÈM OU A NENÉM!?!?!?");
+  }
+
+  obterTexto(){
+    this.ocultar = !this.ocultar;
+  }
 }

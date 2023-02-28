@@ -1,3 +1,72 @@
-u{
+u {
   color: red;
+}
+
+img:hover {
+  transform: scale(1.7);
+  transition: 0.5s;
+}
+
+.logo {
+  width: 2vw;
+}
+
+.manuel {
+  transform: scale(0.02);
+}
+
+.manuel:hover {
+  transform: scale(2);
+}
+
+.background {
+  border-radius: 100%;
+  opacity: 0.5;
+  z-index: 0;
+  height: 100vh;
+  width: 250vh;
+  position: absolute;
+  background-image: url("https://hqscomcafe.com.br/wp-content/uploads/2022/06/FRASES-DO-IGOR-GUIMARAES-800x445.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: spin;
+  animation-duration: 10000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* transform: rotate(3deg); */
+  /* transform: rotate(0.3rad);/ */
+  /* transform: rotate(3grad); */
+  /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.conteudo {
+  z-index: 100;
+  position: absolute;
+}
+
+.tudo {
+  background-color: azure;
+}
+
+.texto {
+  margin-top: 50px;
+  position: inline-block;
+}
+
+.dvd {
+  position: absolute;
+  background-image: url("https://hqscomcafe.com.br/wp-content/uploads/2022/06/FRASES-DO-IGOR-GUIMARAES-800x445.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 370px;
+  height: 200px;
 }
